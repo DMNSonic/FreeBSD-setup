@@ -241,7 +241,7 @@ info "Instalando aplicativos adicionais"
 
 install_packages \
     octopkg \
-    Firefox \
+    firefox \
     pt_BR-libreoffice \
     cmatrix
 
