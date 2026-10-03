@@ -1,44 +1,54 @@
 # FreeBSD-setup
-Script pessoal para instalação do necessário para usar o FreeBSD como desktop.
+Script pessoal para instalação do necessário para usar o FreeBSD como desktop.<br>
+Após a instalação do sistema-base, instale o 'git' para que possa baixar o script usando:
+```
+git clone https://github.com/DMNSonic/FreeBSD-setup.git
+```
+Entre na pasta que fez download, faça um *chmod+x* no script e execute.
+<br>
+<br>
 
 Este script você instala:
 
 - sudo
 - nano
-
 - Intel ou AMD para o video
 
 - KDE Plasma e Wayland:
-
+```
 seatd
 plasma6-plasma
 kde
 sddm
+ly
 networkmgr
 pavucontrol
-
+```
 
 - Compatibilidade com outros formatos de disco:
-
+```
 fusefs-exfat
 fusefs-ext2
 fusefs-gphotofs
 fusefs-hfsfuse
 fusefs-jmtpfs
 fusefs-ntfs
+```
 
 - Programa para Wi-Fi
 
 - Wine
 
 - Outros bons programas:
-
+```
 octopkg
-Firefox
+firefox
 pt_BR-libreoffice
+dolphin-plugins
 cmatrix
+```
 
-Há coisas que ainda precisam ser feitas, então deixarei meu arquivo que tenho há anos ensinando coisas a se fazer no FreeBSD:
+Há coisas que ainda precisam ser feitas, então deixarei meu arquivo que tenho há anos ensinando coisas a se fazer no FreeBSD
 <br>
 <br>
 
