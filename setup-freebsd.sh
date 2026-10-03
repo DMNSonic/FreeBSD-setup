@@ -183,6 +183,7 @@ install_packages \
     plasma6-plasma \
     kde \
     sddm \
+    ly \
     networkmgr \
     pavucontrol
 
@@ -190,7 +191,8 @@ info "Habilitando serviços"
 
 set_sysrc dbus_enable YES
 set_sysrc seatd_enable YES
-set_sysrc sddm_enable YES
+set_sysrc sddm_enable NO
+set_sysrc ly_enable YES
 
 # ------------------------------------------------------------
 # Ajustes de sockets locais
@@ -243,6 +245,7 @@ install_packages \
     octopkg \
     firefox \
     pt_BR-libreoffice \
+    dolphin-plugins \
     cmatrix
 
 # ------------------------------------------------------------
@@ -261,6 +264,7 @@ echo
 echo "Comando recomendado:"
 echo "  reboot"
 echo
-echo "Após reiniciar, o SDDM/KDE Plasma deverá estar disponível."
-echo "Caso após o login não funcionar o Wayland será necessário "
-echo "configuração adicional no arquivo .profile do usuário"
+echo "Após reiniciar, o LY/KDE Plasma deverá estar disponível com Wayland."
+echo "WINE precisa de configuração adicional para executar executaveis 32 bits"
+echo "Quando iniciar o sistema execute 'wine winecfg' e siga as instruções"
+echo "Maiores informações detalhadas, estará no GitHub daonde saiu esse arquivo."
