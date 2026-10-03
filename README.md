@@ -44,19 +44,21 @@ Há coisas que ainda precisam ser feitas, então deixarei meu arquivo que tenho 
 
 # Complemento - Instruções detalhadas
 
+Vou deixar aqui a versão antiga do meu guia onde eu deixava em um Google Keep <br>
+Aqui tem um passo a passo do que eu fazia manualmente, hoje o script neste git faz quase tudo<br>
 
 Para dúvidas em geral tem o Handbook:
 https://docs.freebsd.org/en/books/handbook/
 <br>
 <br>
 
+**IMPORTANTE:**<br>
 Quando criar o usuário coloque nos grupos 'wheel'  'operator' e 'video'
 <br>
 <br>
 
 **PÓS INSTALAÇÃO INICIAL DO SISTEMA**
-
-<br>
+-------------------------------------
 <br>
 
 **Instalar o SUDO**
@@ -73,7 +75,7 @@ Lembre de adicionar o seu usário ao /usr/local/etc/sudoers
 
 <br>
 
-Tembém tem o **Pico** por padrão, basta usar o 'edit'
+Tembém tem o **Pico** por padrão para editar arquivos de texto, basta usar o 'edit'
 
 <br>
 <br>
@@ -211,15 +213,15 @@ pkg install wpa_supplicant_gui
 ```
 <br>
 
----------------------------
-INSTALAÇÃO DE OUTRAS COISAS
----------------------------
 
-Deixei aqui outras instruções de coisas que já instalei antes
+# INSTALAÇÃO DE OUTRAS COISAS
+
+
+Deixei aqui outras instruções de coisas que já instalei antes.<br>
 Talvez ainda seja útil...
 <br>
 
----------------
+
 Instalar o Xorg
 ---------------
 
@@ -244,7 +246,7 @@ mv /root/xorg.conf.new /usr/local/etc/X11/xorg.conf.d/xorg.conf
 Para testar já execute um "startx", você deve ver uma interface gráfica simples rodando.
 <br>
 
----------------
+
 Instalar o XFCE
 ---------------
 
@@ -277,7 +279,7 @@ Sysrc snd_hda_load=yes
 Pronto, o XFCE tá instalado e em portugues
 <br>
 
-----------------
+
 Instalar o Gnome
 ----------------
 ```
@@ -301,8 +303,9 @@ proc   /proc   procfs   rw   0   0
 
 Dê um reboot
 
-‐‐----------------------------
+
 **Trocar o Gnome para português**
+---------------------------------
 
 Editar o arquivo:
 /usr/local/etc/gdm/locale.conf
@@ -313,8 +316,9 @@ LC_MESSAGES="pt_BR.UTF-8"
 ```
 <br>
 
------------------------------------
-**Instalar extensões usando o Firefox** 
+
+**Instalar extensões usando o Firefox para o GNOME** 
+---------------------------------------
 
 No site Gnome Extensions e o plugin do site
 
@@ -324,8 +328,9 @@ Instalar o Dash to Dock para o Gnome
 Instalar o Logo Menu para o Gnome
 <br>
 
----------------------------------
+
 **Trocar o logo no "Sobre" do Gnome**
+-------------------------------------
 
 Trocar os arquivos localizados em /usr/local/share/icons
 gnome-logo-text.svg
@@ -335,8 +340,9 @@ Há versões muito boas de imagens oficiais do FreeBSD no site oficial:
 https://freebsdfoundation.org/about-us/about-the-foundation/project/
 <br>
 
--------------------------------------
+
 **Trocar o logo na tela de login do GDM**
+-----------------------------------------
 ```
 sudo gdm dbus-launch gsettings set org.gnome.login-screen logo '/usr/local/share/icons/FREEBSD_White_mini.png'
 ```
@@ -351,7 +357,7 @@ logo='/path/to/logo.png'
 Recompile a database do GDM
 <br>
 
------------------
+
 Instalar o Mizuma
 -----------------
 
@@ -361,7 +367,7 @@ pkg install mizuma
 ```
 <br>
 
---------------------
+
 Instalar o Automount
 --------------------
 ```
@@ -378,7 +384,7 @@ ENCODING=pt_BR.UTF-8
 ```
 <br>
 
------------------------
+
 Instalar a camada Linux
 -----------------------
 
@@ -413,7 +419,7 @@ Para mais informações:
 https://docs.freebsd.org/en/books/handbook/linuxemu/
 <br>
 
----------------------------------------
+
 Configurar o Wi-Fi por linha de comando
 ---------------------------------------
 
@@ -447,7 +453,7 @@ ifconfig_wlan0="WPA SYNCDHCP"
 ```
 <br>
 
-‐----------------
+
 Reiniciar a rede
 ----------------
 
@@ -456,13 +462,13 @@ Service netif restart
 ```
 <br>
 
------------------
+
 Configurar Webcam
 -----------------
 https://www.davidschlachter.com/misc/freebsd-webcam-browser
 <br>
 
-----------------------------
+
 Analisar o hardware pelo BSD
 ----------------------------
 https://bsd-hardware.info/
